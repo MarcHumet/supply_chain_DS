@@ -17,6 +17,18 @@
 <li><b>Rich Details:</b> Offers comprehensive information on customer demographics and order specifics such as shipping methods and payment channels.</li>
 </ul>
 
+
+<h2>Dataset Changes</h2>
+<p>After review the dataset is modified:</p>
+<ul>
+<li><b>Unique values:</b> Columns with only one different value are removed as they add no relevant information: ['Customer Email',
+ 'Customer Password',
+ 'Product Description',
+ 'Product Status'].</li>
+<li><b>New Columns:</b> New columns are created to implement predictive models. </li>
+
+</ul>
+
 <h2>Models</h2>
 <h3>Phase 1:</h3>
 <h3>1. Monthly Demand Prediction</h3>
