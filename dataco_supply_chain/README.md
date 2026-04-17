@@ -19,13 +19,13 @@
 
 
 <h2>Dataset Changes</h2>
-<p>After review the dataset is modified:</p>
+<p>After review the dataset several changes were applied:</p>
 <ul>
 <li><b>Unique values:</b> Columns with only one different value are removed as they add no relevant information: ['Customer Email',
  'Customer Password',
  'Product Description',
  'Product Status'].</li>
-<li><b>New Columns:</b> New columns are created to implement predictive models. </li>
+<li><b>New Columns:</b> New columns are created to implement predictive models with time series:  year, month. </li>
 
 </ul>
 
@@ -35,7 +35,17 @@
 <p>This model aims to predict the monthly demand for products in the supply chain. By understanding demand patterns, the company can optimize inventory levels, reduce holding costs, and improve customer satisfaction.
 </p>
 <ul>
-<li><b>Features Used:</b> Historical sales data, product categories, time-series features.</li>
+<li><b>Features Used:</b> <ul>
+	<li><b>month</b>: Month of the order (time-series feature)</li>
+	<li><b>year</b>: Year of the order (time-series feature)</li>
+	<li><b>Product Card Id</b>: Unique product identifier</li>
+	<li><b>Product Price</b>: Price of the product</li>
+	<li><b>Category Name</b>: Product category</li>
+	<li><b>Department Name</b>: Department associated with the product</li>
+	<li><b>Market</b>: Geographical market/region</li>
+</ul>
+<b>Target Column:</b> <code>Order Item Quantity</code> (number of items ordered per product per month)
+</li>
 <li><b>Algorithms Considered:</b> LSTM, Linear Regression, Gradient Boosting, Random Forest.</li></ul>
 
 <h3>2. Fraud Order Detection Prediction</h3>
